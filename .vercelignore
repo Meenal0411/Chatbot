@@ -1,6 +1,16 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore user-specific IDE files
+.vscode/
+.idea/
+
+# Ignore __pycache__ directories
+__pycache__/
+
+# Exclude the Git repository
 .git/
 .gitignore
-venv/
-.vscode/
-__pycache__/
-*.pyc
