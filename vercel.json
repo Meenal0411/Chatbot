@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [{ "src": "deploy_chatbot.py", "use": "@vercel/python" }],
+  "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "deploy_chatbot.py" }],
+  "env": {
+    "STREAMLIT_SERVER_PORT": 8501,
+    "STREAMLIT_SERVER_HEADLESS": "true"
+  }
+}
